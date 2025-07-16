@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family:"gameplay";
+    src: url(./tipografias/Gameplay.ttf);
+}
+
+/**pagina 1**/
+
+.login{
+    background-image: url("./img/fondo-loginpage.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.titulo-login{
+    font-family: gameplay;
+    font-size: 3rem;
+    padding-top: 20vh;
+    padding-left: 5vw;
+}
+
+.titulo2-login{
+    font-family: gameplay;
+    font-size: 2rem;
+    padding-left: 9vw;
+}
+
+.img-flecha{
+    width: 8vw;
+    position: relative;
+    top: 22vh;
+    left: 75vw;
+}
+
+/**pagina 2**/
+
+.lecciones{
+    background-image: url("./img/fondo-agua-pag2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.titulo-lecciones{
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 5vh;
+    font-family: gameplay;
+}
+
+.img-hojas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10vw;
+}
+
+.box-hoja1{
+    position: relative;
+    width: 20vw;
+}
+
+.hoja-1{
+    width:100%;
+    display: block;
+}
+
+.box-hoja1 p{
+    position:absolute;
+    font-size: 1.5rem;
+    font-family: gameplay;
+    top: 18vh;
+    left: 5.5vw;
+}
+
+.box-hoja2{
+    position: relative;
+    width: 20vw;
+}
+
+.hoja-2{
+    width: 100%;
+    display: block;
+    margin-top: 40vh;
+}
+
+.box-hoja2 p{
+    width: 70%;
+    position:absolute;
+    font-size: 1.5rem;
+    font-family: gameplay;
+    top: 18vh;
+    left: 45vw;
+    z-index: 2;
+}
+
+.box-hoja3{
+    position: relative;
+    width: 20vw;
+}
+
+.hoja-3{
+    width: 100%;
+    margin: auto;
+    margin-left: 10vw;
+    display: block;
+}
+
+.box-hoja3 p{
+    width: 100%;
+    position:absolute;
+    font-size: 1.5rem;
+    font-family: gameplay;
+    top: 60vh;
+    right: 24vw;
+    z-index: 2;
+}
+
+.box-hoja4{
+    position: relative;
+    width: 20vw;
+}
+
+.hoja-4{
+    width: 20vw;
+    position:absolute;
+}
+
+.box-hoja4 p{
+    width: 100%;
+    position:absolute;
+    font-size: 1.5rem;
+    font-family: gameplay;
+    top: 20vh;
+    left: 5vw;
+    z-index: 2;
+}
+
+.box-hoja5{
+    position: relative;
+    width: 20vw;
+}
+
+.hoja-5{
+    width: 20vw;
+}
+
+.box-hoja5 p{
+    width: 100%;
+    position:absolute;
+    font-size: 1.5rem;
+    font-family: gameplay;
+    top: 20vh;
+    left: 5vw;
+    z-index: 2;
+}
+
+/*pagina quiz*/
+
+.cuestionario{
+    background-image: url("./img/fondo-agua-pag2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+}
+
+.titulo-quiz{
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 5vh;
+    font-family: gameplay;
+}
+
+.box-cuestionario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5vh;
+    line-height: 4rem;
+    font-size: 2rem;
+    background-color: rgba(128, 128, 128, 0.474);
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.box-enviar{
+    position: relative;
+}
+
+.hoja-enviar{
+    width: 8vw;
+    margin-left: 30vw;
+}
+
+.box-enviar p{
+    position: absolute;
+    left: 31.5vw;
+    bottom: 7vh;
+}
+
+/*pagina resultados*/
+
+.medidor{
+    background-image: url("./img/fondo-agua-pag2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.medidor img{
+    width: 80vw;
+    background-image: none;
+    margin: auto;
+}
+.medidor p{
+    font-size: 2rem;
+    text-align: center;
+    padding-top:20vh;
+    font-family: gameplay;
+}
+
+.box-botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-salir{
+    position: relative;
+}
+
+.box-salir img{
+    width: 20vw;
+}
+
+.box-salir p{
+    position: absolute;
+    bottom: 20vh;
+    left: 6vw;
+    z-index: 2;
+}
+
+.box-seguir-leccion{
+    position: relative;
+}
+.box-seguir-leccion img{
+    width: 20vw;
+}
+
+.box-seguir-leccion p{
+    position: absolute;
+    bottom: 17vh;
+    left: 1vw;
+    z-index: 2;
+}
