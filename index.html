@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,144 +8,607 @@
     <script type="module" defer src="./main.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <main>
-        <section  class="login" id="login">
+        <section class="login" id="login">
             <h1 class="titulo-login">DATATHING</h1>
             <h2 class="titulo2-login">ACADEMY!</h2>
-            <img src="https://cdn-icons-png.flaticon.com/512/4731/4731461.png" alt="flecha" class="img-flecha" id="img-flecha">
+            <img src="https://cdn-icons-png.flaticon.com/512/4731/4731461.png" alt="flecha" class="img-flecha"
+                id="img-flecha">
         </section>
 
-        <section class="lecciones" id="lecciones">
+        <section class="lecciones oculto" id="lecciones">
             <h2 class="titulo-lecciones">LECCIONES</h2>
             <div class="img-hojas">
                 <div class="box-hoja" id="hoja1">
-                    <img src="./img/hoja.png"class="hoja-1">
+                    <img src="./img/hoja.png" class="desbloqueado" id="hoja-1">
                     <p>Leccion 1</p>
                 </div>
                 <div class="box-hoja" id="hoja2">
-                    <img src="./img/hoja.png" class="hoja-2">
+                    <img src="./img/hoja.png" class="bloqueado" id="hoja-2">
                     <p>Leccion 2</p>
                 </div>
                 <div class="box-hoja" id="hoja3">
-                    <img src="./img/hoja.png" class="hoja-3">
+                    <img src="./img/hoja.png" class=" bloqueado" id="hoja-3">
                     <p>Leccion 3</p>
                 </div>
                 <div class="box-hoja" id="hoja4">
                     <p>Leccion 4</p>
-                    <img src="./img/hoja.png" class="hoja-4">
+                    <img src="./img/hoja.png" class=" bloqueado" id="hoja-4">
                 </div>
                 <div class="box-hoja" id="hoja5">
-                    <img src="./img/hoja.png" class="hoja-5">
+                    <img src="./img/hoja.png" class=" bloqueado" id="hoja-5">
                     <p>Leccion 5</p>
                 </div>
-                
+
             </div>
         </section>
-
+<section class="felicidades-mal oculto">
+</section>
         <section class="teoria" id="teoria">
-            <div class="leccion" id="leccion1">
+            <div class="leccion oculto" id="leccion1">
                 <h1>Introduccion a la base de Datos y los Datos</h1>
                 <div class="contenido">
-                
-                <p>¿Qué son las Bases de Datos?
-                    Imagina una base de datos como una gran biblioteca digital o un archivador muy organizado donde guardas información. Pero no es cualquier información; es información que está relacionada entre sí y que puedes buscar, actualizar o eliminar fácilmente.
-                    Piénsalo así: si tuvieras que organizar todos los libros de una biblioteca al azar, sería imposible encontrar uno específico. Una base de datos hace el trabajo de organizar esa información de forma lógica para que siempre sepas dónde encontrar lo que necesitas.
-                    En resumen, una base de datos es una colección organizada de información que se almacena y se accede electrónicamente. Está diseñada para manejar grandes cantidades de datos de forma eficiente, permitiendo que múltiples usuarios y programas accedan a ellos al mismo tiempo.
-                    ¿Qué son los Datos?
-                    Los datos son la materia prima de las bases de datos. Son hechos, cifras, estadísticas, textos, imágenes, audios o cualquier otra pieza de información sin procesar. Por sí solos, los datos pueden no tener mucho sentido.
-                    Por ejemplo, el número "25" es un dato. Pero si decimos "25 años", ese dato ya tiene un contexto y se convierte en información útil. La información es el resultado de procesar, organizar y estructurar los datos para darles significado.
-                    En una base de datos, los datos se organizan en unidades más pequeñas, como tablas, que a su vez contienen registros (filas) y campos (columnas). Cada campo contiene un tipo específico de dato (por ejemplo, nombres, edades, fechas).</p>
-                <div class="botones-info">
 
-                <button class="botonRegresarTeoria">Regresar</button>
-                <button class="presentarQuiz">Presentar Quiz</button></div>
+                    <p>¿Qué son las Bases de Datos?
+                        Imagina una base de datos como una gran biblioteca digital o un archivador muy organizado donde
+                        guardas información. Pero no es cualquier información; es información que está relacionada entre
+                        sí y que puedes buscar, actualizar o eliminar fácilmente.
+                        Piénsalo así: si tuvieras que organizar todos los libros de una biblioteca al azar, sería
+                        imposible encontrar uno específico. Una base de datos hace el trabajo de organizar esa
+                        información de forma lógica para que siempre sepas dónde encontrar lo que necesitas.
+                        En resumen, una base de datos es una colección organizada de información que se almacena y se
+                        accede electrónicamente. Está diseñada para manejar grandes cantidades de datos de forma
+                        eficiente, permitiendo que múltiples usuarios y programas accedan a ellos al mismo tiempo.
+                        ¿Qué son los Datos?
+                        Los datos son la materia prima de las bases de datos. Son hechos, cifras, estadísticas, textos,
+                        imágenes, audios o cualquier otra pieza de información sin procesar. Por sí solos, los datos
+                        pueden no tener mucho sentido.
+                        Por ejemplo, el número "25" es un dato. Pero si decimos "25 años", ese dato ya tiene un contexto
+                        y se convierte en información útil. La información es el resultado de procesar, organizar y
+                        estructurar los datos para darles significado.
+                        En una base de datos, los datos se organizan en unidades más pequeñas, como tablas, que a su vez
+                        contienen registros (filas) y campos (columnas). Cada campo contiene un tipo específico de dato
+                        (por ejemplo, nombres, edades, fechas).</p>
+                    <div class="botones-info">
+
+                        <button class="botonRegresarTeoria">Regresar</button>
+                        <button id="presentarQuiz1">Presentar Quiz</button>
+                    </div>
+                </div>
             </div>
-            </div>
-            <div class="leccion" id="leccion2">
-                <h1>Introduccion a la base de Datos y los Datos</h1>
+            <div class="leccion oculto" id="leccion2">
+                <h1>Entendiendo las Bases de Datos</h1>
                 <div class="contenido">
-                
-                <p>¿Qué son las Bases de Datos?
-                    Imagina una base de datos como una gran biblioteca digital o un archivador muy organizado donde guardas información. Pero no es cualquier información; es información que está relacionada entre sí y que puedes buscar, actualizar o eliminar fácilmente.
-                    Piénsalo así: si tuvieras que organizar todos los libros de una biblioteca al azar, sería imposible encontrar uno específico. Una base de datos hace el trabajo de organizar esa información de forma lógica para que siempre sepas dónde encontrar lo que necesitas.
-                    En resumen, una base de datos es una colección organizada de información que se almacena y se accede electrónicamente. Está diseñada para manejar grandes cantidades de datos de forma eficiente, permitiendo que múltiples usuarios y programas accedan a ellos al mismo tiempo.
-                    ¿Qué son los Datos?
-                    Los datos son la materia prima de las bases de datos. Son hechos, cifras, estadísticas, textos, imágenes, audios o cualquier otra pieza de información sin procesar. Por sí solos, los datos pueden no tener mucho sentido.
-                    Por ejemplo, el número "25" es un dato. Pero si decimos "25 años", ese dato ya tiene un contexto y se convierte en información útil. La información es el resultado de procesar, organizar y estructurar los datos para darles significado.
-                    En una base de datos, los datos se organizan en unidades más pequeñas, como tablas, que a su vez contienen registros (filas) y campos (columnas). Cada campo contiene un tipo específico de dato (por ejemplo, nombres, edades, fechas).</p>
-                <div class="botones-info">
 
-                <button class="botonRegresarTeoria">Regresar</button>
-                <button class="presentarQuiz">Presentar Quiz</button></div>
+                    <p>¿Cómo Entender las Bases de Datos?
+                        Para entender mejor las bases de datos, piensa en cómo organizas la información en tu día a día.
+                        Por ejemplo, una lista de contactos en tu teléfono o un catálogo de productos en una tienda.
+                        Las bases de datos nos permiten hacer varias cosas importantes:
+                        • Almacenar: Guardar una gran cantidad de información de forma segura y duradera.
+                        • Organizar: Estructurar la información de manera lógica para que sea fácil de encontrar y usar.
+                        Imagina que cada tipo de dato tiene su "casillero" o campo específico. Múltiples casilleros
+                        forman una tabla.
+                        • Recuperar: Buscar y obtener rápidamente la información que necesitas. ¿Necesitas saber todos
+                        los clientes que viven en Girón? Una base de datos te lo puede decir en segundos.
+                        • Modificar: Actualizar o cambiar la información existente. Si un cliente cambia su número de
+                        teléfono, es sencillo actualizar ese dato.
+                        • Eliminar: Borrar información que ya no es necesaria.
+                        Componentes clave:
+                        • Tablas: Son el elemento principal de una base de datos. Imagínalas como hojas de cálculo donde
+                        cada columna es un campo (ej. Nombre, Edad) y cada fila es un registro (ej. "Juan Pérez", "30").
+                        • Registros (Filas): Representan una única entrada de datos completa. Por ejemplo, todos los
+                        datos de un solo estudiante.
+                        • Campos (Columnas): Son las categorías específicas de datos. Cada campo almacena un tipo
+                        particular de información (ej. solo nombres, solo fechas).
+                    </p>
+                    <div class="botones-info">
+
+                        <button class="botonRegresarTeoria">Regresar</button>
+                        <button id="presentarQuiz2">Presentar Quiz</button>
+                    </div>
+                </div>
             </div>
+            <div class="leccion oculto" id="leccion3">
+                <h1>Representaciones Conceptuales de las bases de Datos</h1>
+                <div class="contenido">
+
+                    <p>¿Cómo Hacer Representaciones Conceptuales de una Base de Datos?
+                        Antes de construir una casa, un arquitecto hace planos. De la misma manera, antes de crear una
+                        base de datos, es fundamental hacer un diseño conceptual. Este diseño nos ayuda a entender qué
+                        información vamos a guardar y cómo se relaciona entre sí, sin preocuparnos aún por los detalles
+                        técnicos de cómo se va a implementar.
+                        La representación conceptual más común es el Modelo Entidad-Relación (MER). Piensa en él como un
+                        mapa que muestra:
+                        • Entidades: Son los "sustantivos" o cosas importantes sobre las que queremos guardar
+                        información. Pueden ser personas, objetos, lugares o eventos. Por ejemplo: Estudiante, Curso,
+                        Libro. En el MER, las entidades se representan usualmente con rectángulos.
+                        • Atributos: Son las características o propiedades de las entidades. Son los "adjetivos" o
+                        detalles que describen una entidad. Por ejemplo, para la entidad Estudiante, los atributos
+                        podrían ser: nombre, apellido, edad, número de identificación. Los atributos se representan con
+                        óvalos conectados a sus entidades.
+                        • Relaciones: Son las conexiones o asociaciones entre dos o más entidades. Indican cómo las
+                        entidades interactúan entre sí. Por ejemplo, un Estudiante "se inscribe en" un Curso. Las
+                        relaciones se representan con rombos conectando las entidades.
+                        Ejemplo simple:
+                        Imagina que quieres registrar la información de estudiantes y los cursos que toman.
+                        • Entidad: Estudiante (atributos: ID_Estudiante, Nombre, Apellido)
+                        • Entidad: Curso (atributos: ID_Curso, Nombre_Curso, Créditos)
+                        • Relación: "se inscribe en" entre Estudiante y Curso. Un estudiante puede inscribirse en varios
+                        cursos, y un curso puede tener varios estudiantes.
+                        El MER nos ayuda a visualizar la estructura de los datos, identificar qué información es
+                        relevante y asegurar que la base de datos pueda manejar las necesidades del negocio. Es el
+                        primer paso crucial en el diseño de cualquier base de datos sólida.</p>
+                    <div class="botones-info">
+
+                        <button class="botonRegresarTeoria">Regresar</button>
+                        <button id="presentarQuiz3">Presentar Quiz</button>
+                    </div>
+                </div>
+            </div>
+            <div class="leccion oculto" id="leccion4">
+                <h1>Cardinalidad en el modelo Entidad-Relación</h1>
+                <div class="contenido">
+
+                    <p>Cardinalidad de las Relaciones en el MER
+                        Además de saber que las entidades se relacionan, es crucial entender cuántas instancias de una
+                        entidad se relacionan con cuántas instancias de otra. Esto se conoce como cardinalidad de la
+                        relación. La cardinalidad nos dice cuántas ocurrencias de una entidad se asocian con cuántas
+                        ocurrencias de otra entidad.
+                        Las cardinalidades más comunes son:
+                        1. Uno a Uno (1:1): Cada ocurrencia de la entidad A se relaciona con una y solo una ocurrencia
+                        de la entidad B, y viceversa.
+                        ◦ Ejemplo: Un Ciudadano tiene un y solo un Número de Identificación, y un Número de
+                        Identificación pertenece a un y solo un Ciudadano.
+                        2. Uno a Muchos (1:M): Una ocurrencia de la entidad A se relaciona con cero o muchas ocurrencias
+                        de la entidad B, pero cada ocurrencia de la entidad B se relaciona con una y solo una ocurrencia
+                        de la entidad A.
+                        ◦ Ejemplo: Un Departamento puede tener muchos Empleados, pero cada Empleado pertenece a un y
+                        solo un Departamento.
+                        3. Muchos a Muchos (M:M): Una ocurrencia de la entidad A se relaciona con cero o muchas
+                        ocurrencias de la entidad B, y una ocurrencia de la entidad B se relaciona con cero o muchas
+                        ocurrencias de la entidad A.
+                        ◦ Ejemplo: Un Estudiante puede inscribirse en muchos Cursos, y un Curso puede tener muchos
+                        Estudiantes inscritos.
+                        Entender la cardinalidad es vital porque afecta directamente cómo se diseñan las tablas en la
+                        base de datos real (el modelo lógico) y cómo se almacenan y recuperan los datos de manera
+                        eficiente.</p>
+                    <div class="botones-info">
+
+                        <button class="botonRegresarTeoria">Regresar</button>
+                        <button id="presentarQuiz4">Presentar Quiz</button>
+                    </div>
+                </div>
+            </div>
+            <div class="leccion oculto" id="leccion5">
+                <h1>Claves primarias y foráneas</h1>
+                <div class="contenido">
+
+                    <p>Claves Primarias y Foráneas
+                        Una vez que tenemos nuestro diseño conceptual (MER) con entidades, atributos y relaciones,
+                        necesitamos una forma de implementar esas relaciones en un sistema de base de datos real. Aquí
+                        es donde entran las claves.
+                        1. Clave Primaria (Primary Key - PK):
+                        ◦ Es uno o un conjunto de atributos que identifica de forma única cada registro (fila) en una
+                        tabla.
+                        ◦ Es como el DNI o número de identificación de cada fila: no puede haber dos filas con la misma
+                        clave primaria y no puede ser nula (vacía).
+                        ◦ Ejemplo: En una tabla de Estudiantes, el atributo ID_Estudiante podría ser la clave primaria.
+                        2. Clave Foránea (Foreign Key - FK):
+                        ◦ Es uno o un conjunto de atributos en una tabla que hace referencia a la clave primaria de otra
+                        tabla.
+                        ◦ Sirve para establecer y mantener la relación entre dos tablas.
+                        ◦ Ejemplo: En una tabla de Cursos que tienen Estudiantes inscritos, podríamos tener una clave
+                        foránea ID_Estudiante que apunte al ID_Estudiante de la tabla de Estudiantes. Esto nos permite
+                        saber qué estudiante está en qué curso.
+                        Las claves primarias y foráneas son fundamentales para la integridad de los datos (asegurar que
+                        los datos sean precisos y consistentes) y para poder realizar búsquedas y uniones entre
+                        diferentes tablas de forma eficiente. Son el pilar de las bases de datos relacionales, que son
+                        las más comunes hoy en día.</p>
+                    <div class="botones-info">
+
+                        <button class="botonRegresarTeoria">Regresar</button>
+                        <button id="presentarQuiz5">Presentar Quiz</button>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="cuestionario" id="cuestionario1">
-            <h2 class="titulo-quiz">QUIZ</h2>
-            <div class="box-cuestionario" id="box-cuestionario1">
-              
-                    <p>1. ¿Cuál de las siguientes afirmaciones describe mejor una base de datos?</p>
-                    <label>
-                        <input type="radio" name="op-1" value="3">
-                        Un documento de texto sin formato.
-                    </label>
-                    <label>
-                        <input type="radio" name="op-1" value="2">
-                        Un programa para dibujar.
-                    </label>
-                    <label>
-                        <input type="radio" name="op-1" value="1">
-                        Una colección organizada de información.
-                    </label>
-                    <label>
-                        <input type="radio" name="op-1" value="4">
-                        Un lugar para almacenar solo imágenes.
-                    </label>
-                    <p>2. ¿Qué son los datos en el contexto de una base de datos?</p>
-                    <label>
-                        <input type="radio" name="op-2" value="2">
-                        Información ya procesada y analizada.
-                    </label>
-                    <label>
-                        <input type="radio" name="op-2" value="1">
-                        Hechos brutos, cifras o valores sin procesar.
-                    </label>
-                    <label>
-                        <input type="radio" name="op-2" value="3">
-                        El diseño visual de una aplicación.
-                    </label>
-                    <label>
-                        <input type="radio" name="op-2" value="4">
-                        Las reglas de seguridad de un sistema.
-                    </label>
-                    <p>3. Si tengo el número "12345" y luego lo identifico como un "Número de teléfono", ¿qué representa "12345" por sí solo?</p>
-                    <label>
-                        <input type="radio" name="op-3" value="3">
-                        Información.
-                    </label>
-                    <label>
-                        <input type="radio" name="op-3" value="2">
-                        Un programa.
-                    </label>
-                    <label>
-                        <input type="radio" name="op-3" value="1">
-                        Un dato.
-                    </label>
-                    <label>
-                        <input type="radio" name="op-3" value="4">
-                        Un sistema.
-                    </label>
-                    <div class="box-enviar" id="enviarQuiz">
-                        <img src="./img/hoja.png" alt="hoja de loto" class="hoja-enviar">
-                        <p>enviar</p>
+           
+            <div class="box-cuestionario oculto" id="box-cuestionario1">
+                <h2 class="titulo-quiz">QUIZ</h2>
+                <p>1. ¿Cuál de las siguientes afirmaciones describe mejor una base de datos?</p>
+                <label>
+                    <input type="radio" name="op-1" value="3">
+                    Un documento de texto sin formato.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="2">
+                    Un programa para dibujar.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="1">
+                    Una colección organizada de información.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="4">
+                    Un lugar para almacenar solo imágenes.
+                </label>
+                <p>2. ¿Qué son los datos en el contexto de una base de datos?</p>
+                <label>
+                    <input type="radio" name="op-2" value="2">
+                    Información ya procesada y analizada.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="1">
+                    Hechos brutos, cifras o valores sin procesar.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="3">
+                    El diseño visual de una aplicación.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="4">
+                    Las reglas de seguridad de un sistema.
+                </label>
+                <p>3. Si tengo el número "12345" y luego lo identifico como un "Número de teléfono", ¿qué representa
+                    "12345" por sí solo?</p>
+                <label>
+                    <input type="radio" name="op-3" value="3">
+                    Información.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="2">
+                    Un programa.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="1">
+                    Un dato.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="4">
+                    Un sistema.
+                </label>
+                <p>4.¿Cuál es el propósito principal de una base de datos?</p>
+                <label>
+                    <input type="radio" name="op-4" value="3">
+                    Guardar libros de manera aleatoria
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="1">
+                    Organizar información para facilitar su búsqueda y manejo
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="2">
+                    Crear páginas web
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="4">
+                    Dibujar gráficos
+                </label>
+                <div class="box-enviar" id="enviarQuiz">
+                    <img src="./img/hoja.png" alt="hoja de loto" class="hoja-enviar">
+                    <p>enviar</p>
+                </div>
+
+
+            </div>
+            <div class="box-cuestionario oculto" id="box-cuestionario2"><h2 class="titulo-quiz">QUIZ</h2>
+                <p>1. ¿Cuál de las siguientes es una función principal de una base de datos?</p>
+                <label>
+                    <input type="radio" name="op-1" value="2">
+                    Crear imágenes y videos.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="3">
+                    Reproducir música en línea.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="1">
+                    Almacenar, organizar y recuperar información.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="4">
+                    Enviar correos electrónicos masivos.
+                </label>
+                <p>2. En una tabla de base de datos, ¿qué representa una "fila" o "registro"?</p>
+                <label>
+                    <input type="radio" name="op-2" value="3">
+                    Una categoría específica de datos (ej. Nombre).
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="1">
+                    Una única entrada de datos completa (ej. todos los datos de una persona).
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="2">
+                    El nombre de la base de datos.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="4">
+                    Un tipo de programa de computadora.
+                </label>
+
+                <p>3. Si quiero almacenar los nombres de productos en una base de datos, ¿qué elemento de la tabla usaría para la categoría "Nombre del Producto"?</p>
+                <label>
+                    <input type="radio" name="op-3" value="2">
+                    Un registro.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="1">
+                    Una tabla.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="3">
+                    Un campo.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="4">
+                    Una base de datos.
+                </label>
+                <p>4. ¿Qué sucede si un cliente cambia su número de teléfono en una base de datos?</p>
+                <label>
+                    <input type="radio" name="op-4" value="3">
+                    Se debe crear una nueva base de datos
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="2">
+                    No se puede actualizar la información
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="1">
+                    Se puede modificar el dato fácilmente
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="4">
+                    La base de datos se reinicia
+                </label>
+                <div class="box-enviar" id="enviarQuiz">
+                    <img src="./img/hoja.png" alt="hoja de loto" class="hoja-enviar">
+                    <p>enviar</p>
                 </div>
                 
-                
-            </div>
 
+            </div>
+            <div class="box-cuestionario oculto" id="box-cuestionario3"><h2 class="titulo-quiz">QUIZ</h2>
+                <p>1. ¿Cuál es el propósito principal de una representación conceptual de una base de datos?</p>
+                <label>
+                    <input type="radio" name="op-1" value="3">
+                    Escribir el código final de la base de datos.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="2">
+                    Diseñar la interfaz de usuario de una aplicación.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="1">
+                    Entender qué información se guardará y cómo se relaciona, antes de la implementación técnica.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="4">
+                    Generar reportes automáticamente.
+                </label>
+            
+                <p>2. En el Modelo Entidad-Relación (MER), ¿qué elemento representa una "cosa" o "sustantivo" sobre el que queremos guardar información?</p>
+                <label>
+                    <input type="radio" name="op-2" value="3">
+                    Atributo.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="2">
+                    Relación.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="1">
+                    Entidad.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="4">
+                    Campo.
+                </label>
+            
+                <p>3. Si estoy diseñando una base de datos para una tienda y tengo la entidad "Producto", ¿cuál de los siguientes sería un atributo de "Producto"?</p>
+                <label>
+                    <input type="radio" name="op-3" value="2">
+                    Cliente.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="1">
+                    Precio.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="3">
+                    Venta.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="4">
+                    Empleado.
+                </label>
+            
+                <p>4. ¿Qué figura geométrica se usa para representar una relación en el MER?</p>
+                <label>
+                    <input type="radio" name="op-4" value="1">
+                    Rombos
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="2">
+                    Óvalos
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="3">
+                    Cuadrados
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="4">
+                    Flechas
+                </label>
+            
+                <div class="box-enviar" id="enviarQuiz">
+                    <img src="./img/hoja.png" alt="hoja de loto" class="hoja-enviar">
+                    <p>enviar</p>
+                </div>
+            </div>
+            <div class="box-cuestionario oculto" id="box-cuestionario4"><h2 class="titulo-quiz">QUIZ</h2>
+                <p>1. En el contexto del Modelo Entidad-Relación, ¿qué indica la cardinalidad de una relación?</p>
+                <label>
+                    <input type="radio" name="op-1" value="3">
+                    El nombre de la relación.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="2">
+                    La cantidad de atributos en una entidad.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="1">
+                    Cuántas instancias de una entidad se relacionan con cuántas de otra.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="4">
+                    El tipo de datos de un atributo.
+                </label>
+            
+                <p>2. Si una entidad "País" puede tener "muchas" "Ciudades", pero cada "Ciudad" pertenece a "un solo" "País", ¿qué tipo de cardinalidad describe esta relación?</p>
+                <label>
+                    <input type="radio" name="op-2" value="2">
+                    Uno a Uno (1:1).
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="1">
+                    Uno a Muchos (1:M).
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="3">
+                    Muchos a Muchos (M:M).
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="4">
+                    Ninguna de las anteriores.
+                </label>
+            
+                <p>3. En una relación "Muchos a Muchos" (M:M) entre "Libro" y "Autor", ¿qué significa?</p>
+                <label>
+                    <input type="radio" name="op-3" value="2">
+                    Un libro tiene un solo autor y un autor escribe un solo libro.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="1">
+                    Un libro puede tener varios autores y un autor puede escribir varios libros.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="3">
+                    Un libro puede tener varios autores, pero un autor solo escribe un libro.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="4">
+                    Un libro solo tiene un autor, pero un autor puede escribir varios libros.
+                </label>
+            
+                <p>4. ¿Cuál de los siguientes ejemplos representa un modelo de relación de uno a muchos (1:M)?</p>
+                <label>
+                    <input type="radio" name="op-4" value="2">
+                    Un Estudiante con muchos Cursos
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="1">
+                    Un Departamento con muchos Empleados
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="3">
+                    Un Producto comprado por un solo Cliente
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="4">
+                    Un Número de Identificación con varios Ciudadanos
+                </label>
+            
+                <div class="box-enviar" id="enviarQuiz">
+                    <img src="./img/hoja.png" alt="hoja de loto" class="hoja-enviar">
+                    <p>enviar</p>
+                </div>
+            </div>
+            <div class="box-cuestionario oculto" id="box-cuestionario5"><h2 class="titulo-quiz">QUIZ</h2>
+                <p>1. ¿Cuál es la función principal de una Clave Primaria (PK) en una tabla de base de datos?</p>
+                <label>
+                    <input type="radio" name="op-1" value="2">
+                    Almacenar textos largos.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="1">
+                    Identificar de forma única cada registro en esa tabla.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="3">
+                    Conectar dos bases de datos diferentes.
+                </label>
+                <label>
+                    <input type="radio" name="op-1" value="4">
+                    Realizar cálculos matemáticos complejos.
+                </label>
+            
+                <p>2. ¿Qué característica es obligatoria para una Clave Primaria?</p>
+                <label>
+                    <input type="radio" name="op-2" value="3">
+                    Debe ser un número.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="2">
+                    Debe ser de tipo texto.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="1">
+                    Debe ser única y no puede ser nula.
+                </label>
+                <label>
+                    <input type="radio" name="op-2" value="4">
+                    Puede repetirse si es necesario.
+                </label>
+            
+                <p>3. ¿Para qué se utiliza una Clave Foránea (FK)?</p>
+                <label>
+                    <input type="radio" name="op-3" value="3">
+                    Para eliminar datos duplicados dentro de una misma tabla.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="2">
+                    Para crear nuevas tablas en la base de datos.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="1">
+                    Para establecer y mantener una relación entre dos tablas.
+                </label>
+                <label>
+                    <input type="radio" name="op-3" value="4">
+                    Para hacer que la base de datos sea más rápida.
+                </label>
+            
+                <p>4. ¿Qué entidades se deben identificar primero en la representación conceptual de una base de datos de una compra?</p>
+                <label>
+                    <input type="radio" name="op-4" value="4">
+                    Nombre, Precio, Fecha
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="2">
+                    Sabores, Tamaños, Colores
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="3">
+                    Nombre, Producto; Tamaños
+                </label>
+                <label>
+                    <input type="radio" name="op-4" value="1">
+                    Usuario, Producto, Orden
+                </label>
+            
+                <div class="box-enviar" id="enviarQuiz">
+                    <img src="./img/hoja.png" alt="hoja de loto" class="hoja-enviar">
+                    <p>enviar</p>
+                </div>
+            </div>
+            
         </section>
     </main>
 </body>
+
 </html>
