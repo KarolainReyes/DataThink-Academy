@@ -80,6 +80,7 @@
     font-family: gameplay;
     top: 18vh;
     left: 5.5vw;
+    z-index: 2;
 }
 
 .box-hoja2{
@@ -164,6 +165,17 @@
     z-index: 2;
 }
 
+/*teoria*/
+
+.leccion1,.leccion2,.leccion3,.leccion4,.leccion5{
+    background-image: url("./img/fondo-agua-pag2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+}
+
 /*pagina quiz*/
 
 .cuestionario{
@@ -182,7 +194,7 @@
     font-family: gameplay;
 }
 
-.box-cuestionario{
+.box-cuestionario,.box-cuestionario2,.box-cuestionario3,.box-cuestionario4{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,3 +280,19 @@
     left: 1vw;
     z-index: 2;
 }
+
+.ocultarPagina{
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.mostrarPagina{
+    display: block;
+}
+
+
+.bloqueada {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
