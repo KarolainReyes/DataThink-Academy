@@ -1,38 +1,42 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 @font-face {
-    font-family:"gameplay";
+    font-family: "gameplay";
     src: url(./tipografias/Gameplay.ttf);
 }
 
 /**pagina 1**/
 
-.login{
-    background-image: url("./img/fondo-loginpage.avif");
+
+.login {
+    background-image: url("./img/swamp.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
-.titulo-login{
+.titulo-login {
     font-family: gameplay;
     font-size: 3rem;
-    padding-top: 20vh;
     padding-left: 5vw;
+    margin-top: 35VH;
 }
 
-.titulo2-login{
+.titulo2-login {
     font-family: gameplay;
     font-size: 2rem;
     padding-left: 9vw;
 }
 
-.img-flecha{
+.img-flecha {
     width: 8vw;
     position: relative;
     top: 22vh;
@@ -41,8 +45,8 @@
 
 /**pagina 2**/
 
-.lecciones{
-    background-image: url("./img/fondo-agua-pag2.jpg");
+.lecciones {
+    background-image: url("./img/ocean.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -50,151 +54,177 @@
     height: auto;
 }
 
-.titulo-lecciones{
+.titulo-lecciones {
     text-align: center;
     font-size: 5rem;
     padding-top: 5vh;
     font-family: gameplay;
 }
 
-.img-hojas{
+.img-hojas {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10vw;
-}
-
-.box-hoja1{
     position: relative;
+    min-height: 110vh;
+}
+
+.box-hoja:hover {
+    transform: scale(1.1);
+}
+
+
+.box-hoja {
+    position: absolute;
     width: 20vw;
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
 }
 
-.hoja-1{
-    width:100%;
-    display: block;
-}
-
-.box-hoja1 p{
-    position:absolute;
-    font-size: 1.5rem;
-    font-family: gameplay;
-    top: 18vh;
-    left: 5.5vw;
-    z-index: 2;
-}
-
-.box-hoja2{
-    position: relative;
-    width: 20vw;
-}
-
-.hoja-2{
+.box-hoja img {
     width: 100%;
-    display: block;
-    margin-top: 40vh;
 }
 
-.box-hoja2 p{
-    width: 70%;
-    position:absolute;
-    font-size: 1.5rem;
-    font-family: gameplay;
-    top: 18vh;
-    left: 45vw;
-    z-index: 2;
+.box-hoja p {
+    position: absolute;
+    z-index: 3;
+    top: 45%;
+    left: 25%;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
-.box-hoja3{
-    position: relative;
-    width: 20vw;
+#hoja1 {
+    position: absolute;
+    left: 10vw;
+    top: 1vh
 }
 
-.hoja-3{
-    width: 100%;
-    margin: auto;
-    margin-left: 10vw;
-    display: block;
+#hoja2 {
+    position: absolute;
+    left: 65vw;
+    top: 10vh
 }
 
-.box-hoja3 p{
-    width: 100%;
-    position:absolute;
-    font-size: 1.5rem;
-    font-family: gameplay;
-    top: 60vh;
-    right: 24vw;
-    z-index: 2;
+#hoja3 {
+    position: absolute;
+    left: 40vw;
+    top: 30vh
 }
 
-.box-hoja4{
-    position: relative;
-    width: 20vw;
+#hoja4 {
+    position: absolute;
+    left: 10vw;
+    top: 50vh
 }
 
-.hoja-4{
-    width: 20vw;
-    position:absolute;
+#hoja5 {
+    position: absolute;
+    left: 60vw;
+    top: 70vh
 }
 
-.box-hoja4 p{
-    width: 100%;
-    position:absolute;
-    font-size: 1.5rem;
-    font-family: gameplay;
-    top: 20vh;
-    left: 5vw;
-    z-index: 2;
-}
-
-.box-hoja5{
-    position: relative;
-    width: 20vw;
-}
-
-.hoja-5{
-    width: 20vw;
-}
-
-.box-hoja5 p{
-    width: 100%;
-    position:absolute;
-    font-size: 1.5rem;
-    font-family: gameplay;
-    top: 20vh;
-    left: 5vw;
-    z-index: 2;
-}
 
 /*teoria*/
 
-.leccion1,.leccion2,.leccion3,.leccion4,.leccion5{
-    background-image: url("./img/fondo-agua-pag2.jpg");
+.leccion {
+    background-image: url("./img/ocean.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height:100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.leccion h1 {
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    font-family: gameplay;
+    width: 40%;
+    text-align: center;
+}
+
+.contenido {
+    width: 40%;
+    background-color: rgba(133, 206, 228, 0.651);
+    font-size: clamp(1rem, 3vw, 2rem);
+    padding: 3vw;
+    border-radius: 30px;
 }
 
 /*pagina quiz*/
 
-.cuestionario{
-    background-image: url("./img/fondo-agua-pag2.jpg");
+.botones-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+}
+
+.botones-info button {
+    width: 10vw;
+    height: 5vh;
+    background-color: #88b04b; 
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: gameplay;
+    transition: background-color 0.2s ease;
+}
+
+.botones-info button:hover{  background-color: #769e3c;
+}
+input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4d7c0f; /* verde oscuro intenso */
+    background-color: #e9f5e3; /* fondo verde claro */
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #4d7c0f; /* círculo interior más fuerte */
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  input[type="radio"]:checked::before {
+    opacity: 1;
+  }
+  
+
+.cuestionario {
+    background-image: url("./img/ocean.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height:100vh;
 }
 
-.titulo-quiz{
+.titulo-quiz {
     text-align: center;
     font-size: 5rem;
-    padding-top: 5vh;
+    padding: 5vh;
     font-family: gameplay;
 }
 
-.box-cuestionario,.box-cuestionario2,.box-cuestionario3,.box-cuestionario4{
+.box-cuestionario{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,16 +239,20 @@
     border-radius: 10px;
 }
 
-.box-enviar{
+.box-cuestionario p{font-size: clamp(1rem,2vw,2rem);font-weight: 600;text-align: start;align-self: start;}
+
+.box-cuestionario label{text-align: start;align-self: start;margin-left: 2vw;}
+
+.box-enviar {
     position: relative;
 }
 
-.hoja-enviar{
+.hoja-enviar {
     width: 8vw;
     margin-left: 30vw;
 }
 
-.box-enviar p{
+.box-enviar p {
     position: absolute;
     left: 31.5vw;
     bottom: 7vh;
@@ -226,73 +260,13 @@
 
 /*pagina resultados*/
 
-.medidor{
-    background-image: url("./img/fondo-agua-pag2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
 
-.medidor img{
-    width: 80vw;
-    background-image: none;
-    margin: auto;
-}
-.medidor p{
-    font-size: 2rem;
-    text-align: center;
-    padding-top:20vh;
-    font-family: gameplay;
-}
 
-.box-botones{
-    display: flex;
-    justify-content: space-around;
-}
-
-.box-salir{
-    position: relative;
-}
-
-.box-salir img{
-    width: 20vw;
-}
-
-.box-salir p{
-    position: absolute;
-    bottom: 20vh;
-    left: 6vw;
-    z-index: 2;
-}
-
-.box-seguir-leccion{
-    position: relative;
-}
-.box-seguir-leccion img{
-    width: 20vw;
-}
-
-.box-seguir-leccion p{
-    position: absolute;
-    bottom: 17vh;
-    left: 1vw;
-    z-index: 2;
-}
-
-.ocultarPagina{
+.ocultarPagina {
     display: none;
-    transition: all 0.3s ease;
 }
-
-.mostrarPagina{
-    display: block;
-}
-
 
 .bloqueada {
     opacity: 0.5;
     pointer-events: none;
 }
-

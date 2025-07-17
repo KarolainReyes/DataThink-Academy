@@ -22,7 +22,7 @@ for(let i=1;i<=5;i++){
 }
 
 const leccionPresentar=document.getElementById(`leccion${leccion}`);
-if (leccionPresentar) leccionPresentar.style.display="block";
+if (leccionPresentar) leccionPresentar.style.display="flex";
 } 
 
 document.getElementById("hoja1").addEventListener("click", () => {
