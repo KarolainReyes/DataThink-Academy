@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script type="module" defer src="script.js"></script>
+    <script type="module" defer src="./main.js"></script>
     <title>Document</title>
 </head>
 <body>
     <main>
-        <section  class="login">
+        <section  class="login" id="login">
             <h1 class="titulo-login">DATATHING</h1>
             <h2 class="titulo2-login">ACADEMY!</h2>
-            <img src="https://cdn-icons-png.flaticon.com/512/4731/4731461.png" alt="flecha" class="img-flecha">
+            <img src="https://cdn-icons-png.flaticon.com/512/4731/4731461.png" alt="flecha" class="img-flecha" id="img-flecha">
         </section>
 
-        <section class="lecciones">
+        <section class="lecciones" id="lecciones">
             <h2 class="titulo-lecciones">LECCIONES</h2>
             <div class="img-hojas">
-                <div class="box-hoja1">
+                <div class="box-hoja1" id="hoja1">
                     <img src="./img/hoja.png"class="hoja-1">
                     <p>Leccion 1</p>
                 </div>
-                <div class="box-hoja2">
+                <div class="box-hoja2" id="hoja2">
                     <img src="./img/hoja.png" class="hoja-2">
                     <p>Leccion 2</p>
                 </div>
-                <div class="box-hoja3">
+                <div class="box-hoja3" id="hoja3">
                     <img src="./img/hoja.png" class="hoja-3">
                     <p>Leccion 3</p>
                 </div>
-                <div class="box-hoja4">
+                <div class="box-hoja4" id="hoja4">
                     <p>Leccion 4</p>
                     <img src="./img/hoja.png" class="hoja-4">
                 </div>
-                <div class="box-hoja5">
+                <div class="box-hoja5" id="hoja5">
                     <img src="./img/hoja.png" class="hoja-5">
                     <p>Leccion 5</p>
                 </div>
@@ -42,32 +42,64 @@
             </div>
         </section>
 
-        <section class="cuestionario">
+        <section class="teoria" id="teoria">
+            <div class="leccion1" id="leccion1">
+                teoria 1
+                <button class="botonRegresarTeoria">Regresar</button>
+                <button class="presentarQuiz">Presentar Quiz</button>
+            </div>
+            <div class="leccion2" id="leccion2">
+                teoria 2
+                <button class="botonRegresarTeoria">Regresar</button>
+                <button class="presentarQuiz">Presentar Quiz</button>
+            </div>
+            <div class="leccion3" id="leccion3">
+                teoria 3
+                <button class="botonRegresarTeoria">Regresar</button>
+                <button class="presentarQuiz">Presentar Quiz</button>
+            </div>
+            <div class="leccion4" id="leccion4">
+                teoria 4
+                <button class="botonRegresarTeoria">Regresar</button>
+                <button class="presentarQuiz">Presentar Quiz</button>
+            </div>
+            <div class="leccion5" id="leccion5">
+                teoria 5
+                <button class="botonRegresarTeoria">Regresar</button>
+                <button class="presentarQuiz">Presentar Quiz</button>
+            </div>
+        </section>
+
+        <section class="cuestionario" id="cuestionario">
             <h2 class="titulo-quiz">QUIZ</h2>
-            <div class="box-cuestionario">
-                <p>¿Qué es el backend en términos sencillos?</p>
-                <label>
-                    <input type="radio" name="op-1" value="1">
-                    Opcion 1
-                </label>
-                <label>
-                    <input type="radio" name="op-1" value="1">
-                    Opcion 2
-                </label>
-                <label>
-                    <input type="radio" name="op-1" value="1">
-                    Opcion 3
-                </label>
-                <label>
-                    <input type="radio" name="op-1" value="1">
-                    Opcion 4
-                </label>
-                <div class="box-enviar">
-                    <img src="./img/hoja.png" alt="hoja de loto" class="hoja-enviar">
-                    <p>enviar</p>
+            <div class="box-cuestionario" id="box-cuestionario1">
+                <div class="pregunta1">
+                    <p>¿Qué es el backend en términos sencillos?</p>
+                    <label>
+                        <input type="radio" name="op-1" value="1">
+                        Opcion 1
+                    </label>
+                    <label>
+                        <input type="radio" name="op-1" value="2">
+                        Opcion 2
+                    </label>
+                    <label>
+                        <input type="radio" name="op-1" value="3">
+                        Opcion 3
+                    </label>
+                    <label>
+                        <input type="radio" name="op-1" value="4">
+                        Opcion 4
+                    </label>
+                    <div class="box-enviar" id="enviarQuiz">
+                        <img src="./img/hoja.png" alt="hoja de loto" class="hoja-enviar">
+                        <p>enviar</p>
+                    </div>
                 </div>
                 
+                
             </div>
+
         </section>
 
         <section class="medidor">
