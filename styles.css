@@ -8,6 +8,7 @@
     src: url(./tipografias/Gameplay.ttf);
 }
 
+
 /**pagina 1**/
 
 
@@ -46,7 +47,7 @@
 /**pagina 2**/
 
 .lecciones {
-    background-image: url("./img/ocean.jpg");
+    background-image: url("./img/ocean.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -126,13 +127,19 @@
 
 /*teoria*/
 
+.teoria {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    height: 100%;
+}
+
 .leccion {
-    background-image: url("./img/ocean.jpg");
+    background-image: url("./img/ocean.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,6 +152,8 @@
     font-family: gameplay;
     width: 40%;
     text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
 }
 
 .contenido {
@@ -153,6 +162,7 @@
     font-size: clamp(1rem, 3vw, 2rem);
     padding: 3vw;
     border-radius: 30px;
+    margin-bottom: 3vh;
 }
 
 /*pagina quiz*/
@@ -166,7 +176,7 @@
 .botones-info button {
     width: 10vw;
     height: 5vh;
-    background-color: #88b04b; 
+    background-color: #88b04b;
     color: rgb(0, 0, 0);
     border: none;
     padding: 12px 24px;
@@ -177,44 +187,51 @@
     transition: background-color 0.2s ease;
 }
 
-.botones-info button:hover{  background-color: #769e3c;
+.botones-info button:hover {
+    background-color: #769e3c;
 }
+
 input[type="radio"] {
     appearance: none;
     width: 18px;
     height: 18px;
-    border: 2px solid #4d7c0f; /* verde oscuro intenso */
-    background-color: #e9f5e3; /* fondo verde claro */
+    border: 2px solid #4d7c0f;
+    /* verde oscuro intenso */
+    background-color: #e9f5e3;
+    /* fondo verde claro */
     border-radius: 50%;
     cursor: pointer;
     position: relative;
     transition: all 0.2s ease;
-  }
-  
-  input[type="radio"]::before {
+}
+
+input[type="radio"]::before {
     content: "";
     position: absolute;
     top: 4px;
     left: 4px;
     width: 8px;
     height: 8px;
-    background-color: #4d7c0f; /* círculo interior más fuerte */
+    background-color: #4d7c0f;
+    /* círculo interior más fuerte */
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.2s ease;
-  }
-  
-  input[type="radio"]:checked::before {
+}
+
+input[type="radio"]:checked::before {
     opacity: 1;
-  }
-  
+}
+
 
 .cuestionario {
-    background-image: url("./img/ocean.jpg");
+    background-image: url("./img/ocean.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
+    padding: 3vh;
+    box-sizing: border-box;
 }
 
 .titulo-quiz {
@@ -224,7 +241,7 @@ input[type="radio"] {
     font-family: gameplay;
 }
 
-.box-cuestionario{
+.box-cuestionario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,16 +249,25 @@ input[type="radio"] {
     margin: auto;
     padding: 5vh;
     line-height: 4rem;
-    font-size: 2rem;
     background-color: rgba(128, 128, 128, 0.474);
-    width: 40%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
 }
 
-.box-cuestionario p{font-size: clamp(1rem,2vw,2rem);font-weight: 600;text-align: start;align-self: start;}
+.box-cuestionario p {
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: 600;
+    text-align: start;
+    align-self: start;
+}
 
-.box-cuestionario label{text-align: start;align-self: start;margin-left: 2vw;}
+.box-cuestionario label {
+    text-align: start;
+    align-self: start;
+    margin-left: 2vw;
+    font-size: 1.3rem;
+}
 
 .box-enviar {
     position: relative;
@@ -262,11 +288,49 @@ input[type="radio"] {
 
 
 
-.ocultarPagina {
-    display: none;
+.bloqueado {
+    opacity: 0.5 !important;
+    pointer-events: none;
 }
 
-.bloqueada {
-    opacity: 0.5;
-    pointer-events: none;
+.oculto {
+    display: none !important;
+}
+
+.felicidades,.mal {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(130, 194, 151);
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    padding: 3vh;
+    box-sizing: border-box;
+    font-family: gameplay;
+    color: white;
+}
+
+.mal{background-color: rgb(194, 137, 130);}
+
+.felicidades img,.mal img {
+    max-width: 20vw;
+}
+
+.felicidades button, .mal button {
+    width: 10vw;
+    height: 4vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: gameplay;
+}
+
+.felicidades-mal {
+    width: 100%;
+    background-image: url(./img/ocean.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
