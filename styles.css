@@ -9,6 +9,7 @@
 }
 
 
+
 /**pagina 1**/
 
 
@@ -174,17 +175,18 @@
 }
 
 .botones-info button {
-    width: 10vw;
-    height: 5vh;
+    width: 35%;
+    height: 7vh;
     background-color: #88b04b;
     color: rgb(0, 0, 0);
     border: none;
     padding: 12px 24px;
-    font-size: 1rem;
+    font-size: clamp(0.5rem,1vw,1rem);
     border-radius: 8px;
     cursor: pointer;
     font-family: gameplay;
     transition: background-color 0.2s ease;
+    box-sizing: border-box;
 }
 
 .botones-info button:hover {
@@ -277,10 +279,15 @@ input[type="radio"]:checked::before {
     margin-left: 30vw;
 }
 
+.hoja-enviar {
+    width: 8vw;
+    margin-left: 30vw;
+}
+
 .box-enviar p {
     position: absolute;
-    left: 31.5vw;
-    bottom: 7vh;
+    right: 0;
+    bottom: 0vh;
 }
 
 /*pagina resultados*/
