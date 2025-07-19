@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script type="module" defer src="./main.js"></script>
+    
     <title>Document</title>
 </head>
 
@@ -14,13 +14,15 @@
         <section class="login" id="login">
             <h1 class="titulo-login">DATATHING</h1>
             <h2 class="titulo2-login">ACADEMY!</h2>
-            <img src="https://cdn-icons-png.flaticon.com/512/4731/4731461.png" alt="flecha" class="img-flecha"
+            <img src="./img/flecha.png" alt="flecha" class="img-flecha"
                 id="img-flecha">
         </section>
 
         <section class="lecciones oculto" id="lecciones">
             <h2 class="titulo-lecciones">LECCIONES</h2>
+            <img id="flechaVolver" src="./img/volver.png">
             <div class="img-hojas">
+                
                 <div class="box-hoja" id="hoja1">
                     <img src="./img/hoja.png" class="desbloqueado" id="hoja-1">
                     <p>Leccion 1</p>
@@ -221,75 +223,75 @@
                 <h2 class="titulo-quiz">QUIZ</h2>
                 <p>1. ¿Cuál de las siguientes afirmaciones describe mejor una base de datos?</p>
                 <label>
-                    <input type="radio" name="op-1" value="3">
+                    <input type="radio" name="op1-1" value="3">
                     Un documento de texto sin formato.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="2">
+                    <input type="radio" name="op1-1" value="2">
                     Un programa para dibujar.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="1">
+                    <input type="radio" name="op1-1" value="1">
                     Una colección organizada de información.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="4">
+                    <input type="radio" name="op1-1" value="4">
                     Un lugar para almacenar solo imágenes.
                 </label>
                 <p>2. ¿Qué son los datos en el contexto de una base de datos?</p>
                 <label>
-                    <input type="radio" name="op-2" value="2">
+                    <input type="radio" name="op1-2" value="2">
                     Información ya procesada y analizada.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="1">
+                    <input type="radio" name="op1-2" value="1">
                     Hechos brutos, cifras o valores sin procesar.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="3">
+                    <input type="radio" name="op1-2" value="3">
                     El diseño visual de una aplicación.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="4">
+                    <input type="radio" name="op1-2" value="4">
                     Las reglas de seguridad de un sistema.
                 </label>
                 <p>3. Si tengo el número "12345" y luego lo identifico como un "Número de teléfono", ¿qué representa
                     "12345" por sí solo?</p>
                 <label>
-                    <input type="radio" name="op-3" value="3">
+                    <input type="radio" name="op1-3" value="3">
                     Información.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="2">
+                    <input type="radio" name="op1-3" value="2">
                     Un programa.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="1">
+                    <input type="radio" name="op1-3" value="1">
                     Un dato.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="4">
+                    <input type="radio" name="op1-3" value="4">
                     Un sistema.
                 </label>
                 <p>4.¿Cuál es el propósito principal de una base de datos?</p>
                 <label>
-                    <input type="radio" name="op-4" value="3">
+                    <input type="radio" name="op1-4" value="3">
                     Guardar libros de manera aleatoria
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="1">
+                    <input type="radio" name="op1-4" value="1">
                     Organizar información para facilitar su búsqueda y manejo
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="2">
+                    <input type="radio" name="op1-4" value="2">
                     Crear páginas web
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="4">
+                    <input type="radio" name="op1-4" value="4">
                     Dibujar gráficos
                 </label>
-                <div class="box-enviar" id="enviarQuiz">
-                    <img src="./img/botonEnviar.png" alt="hoja de loto" class="hoja-enviar">
+                <div class="box-enviar" >
+                    <img src="./img/botonEnviar.png" alt="hoja de loto" class="hoja-enviar" id="enviarQuiz1">
                    
                 </div>
 
@@ -298,71 +300,71 @@
             <div class="box-cuestionario oculto" id="box-cuestionario2"><h2 class="titulo-quiz">QUIZ</h2>
                 <p>1. ¿Cuál de las siguientes es una función principal de una base de datos?</p>
                 <label>
-                    <input type="radio" name="op-1" value="2">
+                    <input type="radio" name="op2-1" value="2">
                     Crear imágenes y videos.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="3">
+                    <input type="radio" name="op2-1" value="3">
                     Reproducir música en línea.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="1">
+                    <input type="radio" name="op2-1" value="1">
                     Almacenar, organizar y recuperar información.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="4">
+                    <input type="radio" name="op2-1" value="4">
                     Enviar correos electrónicos masivos.
                 </label>
                 <p>2. En una tabla de base de datos, ¿qué representa una "fila" o "registro"?</p>
                 <label>
-                    <input type="radio" name="op-2" value="3">
+                    <input type="radio" name="op2-2" value="3">
                     Una categoría específica de datos (ej. Nombre).
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="1">
+                    <input type="radio" name="op2-2" value="1">
                     Una única entrada de datos completa (ej. todos los datos de una persona).
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="2">
+                    <input type="radio" name="op2-2" value="2">
                     El nombre de la base de datos.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="4">
+                    <input type="radio" name="op2-2" value="4">
                     Un tipo de programa de computadora.
                 </label>
 
                 <p>3. Si quiero almacenar los nombres de productos en una base de datos, ¿qué elemento de la tabla usaría para la categoría "Nombre del Producto"?</p>
                 <label>
-                    <input type="radio" name="op-3" value="2">
+                    <input type="radio" name="op2-3" value="2">
                     Un registro.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="1">
+                    <input type="radio" name="op2-3" value="1">
                     Una tabla.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="3">
+                    <input type="radio" name="op2-3" value="3">
                     Un campo.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="4">
+                    <input type="radio" name="op2-3" value="4">
                     Una base de datos.
                 </label>
                 <p>4. ¿Qué sucede si un cliente cambia su número de teléfono en una base de datos?</p>
                 <label>
-                    <input type="radio" name="op-4" value="3">
+                    <input type="radio" name="op2-4" value="3">
                     Se debe crear una nueva base de datos
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="2">
+                    <input type="radio" name="op2-4" value="2">
                     No se puede actualizar la información
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="1">
+                    <input type="radio" name="op2-4" value="1">
                     Se puede modificar el dato fácilmente
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="4">
+                    <input type="radio" name="op2-4" value="4">
                     La base de datos se reinicia
                 </label>
                 <div class="box-enviar" id="enviarQuiz2">
@@ -375,73 +377,73 @@
             <div class="box-cuestionario oculto" id="box-cuestionario3"><h2 class="titulo-quiz">QUIZ</h2>
                 <p>1. ¿Cuál es el propósito principal de una representación conceptual de una base de datos?</p>
                 <label>
-                    <input type="radio" name="op-1" value="3">
+                    <input type="radio" name="op3-1" value="3">
                     Escribir el código final de la base de datos.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="2">
+                    <input type="radio" name="op3-1" value="2">
                     Diseñar la interfaz de usuario de una aplicación.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="1">
+                    <input type="radio" name="op3-1" value="1">
                     Entender qué información se guardará y cómo se relaciona, antes de la implementación técnica.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="4">
+                    <input type="radio" name="op3-1" value="4">
                     Generar reportes automáticamente.
                 </label>
             
                 <p>2. En el Modelo Entidad-Relación (MER), ¿qué elemento representa una "cosa" o "sustantivo" sobre el que queremos guardar información?</p>
                 <label>
-                    <input type="radio" name="op-2" value="3">
+                    <input type="radio" name="op3-2" value="3">
                     Atributo.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="2">
+                    <input type="radio" name="op3-2" value="2">
                     Relación.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="1">
+                    <input type="radio" name="op3-2" value="1">
                     Entidad.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="4">
+                    <input type="radio" name="op3-2" value="4">
                     Campo.
                 </label>
             
                 <p>3. Si estoy diseñando una base de datos para una tienda y tengo la entidad "Producto", ¿cuál de los siguientes sería un atributo de "Producto"?</p>
                 <label>
-                    <input type="radio" name="op-3" value="2">
+                    <input type="radio" name="op3-3" value="2">
                     Cliente.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="1">
+                    <input type="radio" name="op3-3" value="1">
                     Precio.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="3">
+                    <input type="radio" name="op3-3" value="3">
                     Venta.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="4">
+                    <input type="radio" name="op3-3" value="4">
                     Empleado.
                 </label>
             
                 <p>4. ¿Qué figura geométrica se usa para representar una relación en el MER?</p>
                 <label>
-                    <input type="radio" name="op-4" value="1">
+                    <input type="radio" name="op3-4" value="1">
                     Rombos
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="2">
+                    <input type="radio" name="op3-4" value="2">
                     Óvalos
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="3">
+                    <input type="radio" name="op3-4" value="3">
                     Cuadrados
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="4">
+                    <input type="radio" name="op3-4" value="4">
                     Flechas
                 </label>
             
@@ -453,73 +455,73 @@
             <div class="box-cuestionario oculto" id="box-cuestionario4"><h2 class="titulo-quiz">QUIZ</h2>
                 <p>1. En el contexto del Modelo Entidad-Relación, ¿qué indica la cardinalidad de una relación?</p>
                 <label>
-                    <input type="radio" name="op-1" value="3">
+                    <input type="radio" name="op4-1" value="3">
                     El nombre de la relación.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="2">
+                    <input type="radio" name="op4-1" value="2">
                     La cantidad de atributos en una entidad.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="1">
+                    <input type="radio" name="op4-1" value="1">
                     Cuántas instancias de una entidad se relacionan con cuántas de otra.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="4">
+                    <input type="radio" name="op4-1" value="4">
                     El tipo de datos de un atributo.
                 </label>
             
                 <p>2. Si una entidad "País" puede tener "muchas" "Ciudades", pero cada "Ciudad" pertenece a "un solo" "País", ¿qué tipo de cardinalidad describe esta relación?</p>
                 <label>
-                    <input type="radio" name="op-2" value="2">
+                    <input type="radio" name="op4-2" value="2">
                     Uno a Uno (1:1).
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="1">
+                    <input type="radio" name="op4-2" value="1">
                     Uno a Muchos (1:M).
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="3">
+                    <input type="radio" name="op4-2" value="3">
                     Muchos a Muchos (M:M).
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="4">
+                    <input type="radio" name="op4-2" value="4">
                     Ninguna de las anteriores.
                 </label>
             
                 <p>3. En una relación "Muchos a Muchos" (M:M) entre "Libro" y "Autor", ¿qué significa?</p>
                 <label>
-                    <input type="radio" name="op-3" value="2">
+                    <input type="radio" name="op4-3" value="2">
                     Un libro tiene un solo autor y un autor escribe un solo libro.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="1">
+                    <input type="radio" name="op4-3" value="1">
                     Un libro puede tener varios autores y un autor puede escribir varios libros.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="3">
+                    <input type="radio" name="op4-3" value="3">
                     Un libro puede tener varios autores, pero un autor solo escribe un libro.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="4">
+                    <input type="radio" name="op4-3" value="4">
                     Un libro solo tiene un autor, pero un autor puede escribir varios libros.
                 </label>
             
                 <p>4. ¿Cuál de los siguientes ejemplos representa un modelo de relación de uno a muchos (1:M)?</p>
                 <label>
-                    <input type="radio" name="op-4" value="2">
+                    <input type="radio" name="op4-4" value="2">
                     Un Estudiante con muchos Cursos
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="1">
+                    <input type="radio" name="op4-4" value="1">
                     Un Departamento con muchos Empleados
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="3">
+                    <input type="radio" name="op4-4" value="3">
                     Un Producto comprado por un solo Cliente
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="4">
+                    <input type="radio" name="op4-4" value="4">
                     Un Número de Identificación con varios Ciudadanos
                 </label>
             
@@ -531,73 +533,73 @@
             <div class="box-cuestionario oculto" id="box-cuestionario5"><h2 class="titulo-quiz">QUIZ</h2>
                 <p>1. ¿Cuál es la función principal de una Clave Primaria (PK) en una tabla de base de datos?</p>
                 <label>
-                    <input type="radio" name="op-1" value="2">
+                    <input type="radio" name="op5-1" value="2">
                     Almacenar textos largos.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="1">
+                    <input type="radio" name="op5-1" value="1">
                     Identificar de forma única cada registro en esa tabla.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="3">
+                    <input type="radio" name="op5-1" value="3">
                     Conectar dos bases de datos diferentes.
                 </label>
                 <label>
-                    <input type="radio" name="op-1" value="4">
+                    <input type="radio" name="op5-1" value="4">
                     Realizar cálculos matemáticos complejos.
                 </label>
             
                 <p>2. ¿Qué característica es obligatoria para una Clave Primaria?</p>
                 <label>
-                    <input type="radio" name="op-2" value="3">
+                    <input type="radio" name="op5-2" value="3">
                     Debe ser un número.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="2">
+                    <input type="radio" name="op5-2" value="2">
                     Debe ser de tipo texto.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="1">
+                    <input type="radio" name="op5-2" value="1">
                     Debe ser única y no puede ser nula.
                 </label>
                 <label>
-                    <input type="radio" name="op-2" value="4">
+                    <input type="radio" name="op5-2" value="4">
                     Puede repetirse si es necesario.
                 </label>
             
                 <p>3. ¿Para qué se utiliza una Clave Foránea (FK)?</p>
                 <label>
-                    <input type="radio" name="op-3" value="3">
+                    <input type="radio" name="op5-3" value="3">
                     Para eliminar datos duplicados dentro de una misma tabla.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="2">
+                    <input type="radio" name="op5-3" value="2">
                     Para crear nuevas tablas en la base de datos.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="1">
+                    <input type="radio" name="op5-3" value="1">
                     Para establecer y mantener una relación entre dos tablas.
                 </label>
                 <label>
-                    <input type="radio" name="op-3" value="4">
+                    <input type="radio" name="op5-3" value="4">
                     Para hacer que la base de datos sea más rápida.
                 </label>
             
                 <p>4. ¿Qué entidades se deben identificar primero en la representación conceptual de una base de datos de una compra?</p>
                 <label>
-                    <input type="radio" name="op-4" value="4">
+                    <input type="radio" name="op5-4" value="4">
                     Nombre, Precio, Fecha
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="2">
+                    <input type="radio" name="op5-4" value="2">
                     Sabores, Tamaños, Colores
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="3">
+                    <input type="radio" name="op5-4" value="3">
                     Nombre, Producto; Tamaños
                 </label>
                 <label>
-                    <input type="radio" name="op-4" value="1">
+                    <input type="radio" name="op5-4" value="1">
                     Usuario, Producto, Orden
                 </label>
             
@@ -610,5 +612,5 @@
         </section>
     </main>
 </body>
-
+<script type="module" defer src="./main.js"></script>
 </html>

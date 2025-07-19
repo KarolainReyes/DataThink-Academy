@@ -12,6 +12,7 @@
 
 /**pagina 1**/
 
+#flechaVolver{max-width: 70px;position: absolute;left: 1vw;top: 5vh;}
 
 .login {
     background-image: url("./img/swamp.avif");

@@ -11,9 +11,20 @@ function mostrarPagina() {
     document.getElementById("lecciones").classList.remove("oculto");
 }
 
+function nomostrarPagina() {
+    localStorage.setItem("usuarioActivo", "false");
+    document.getElementById("login").classList.remove("oculto");
+    document.getElementById("lecciones").classList.add("oculto");
+}
+
 const botonInicio = document.getElementById("img-flecha");
 botonInicio.addEventListener("click", () => {
     mostrarPagina();
+});
+
+const botonVolverInicio = document.getElementById("flechaVolver");
+botonVolverInicio.addEventListener("click", () => {
+    nomostrarPagina();
 });
 
 /* Regresar desde teoría */
@@ -28,167 +39,224 @@ for (let i = 0; i < botonesRegreso.length; i++) {
 /* Evento para clic en módulos */
 document.addEventListener('click', function (event) {
     const elementoClicado = event.target;
+    console.log(elementoClicado)
     if (elementoClicado.classList.contains("desbloqueado")) {
         switch (elementoClicado.id) {
             case "hoja-1":
-                let modsig = "hoja2";
                 document.getElementById("lecciones").classList.toggle("oculto");
                 document.getElementById("leccion1").classList.toggle("oculto");
-                document.getElementById("presentarQuiz1").addEventListener("click", () => {
-                    document.getElementById("leccion1").classList.toggle("oculto");
-                    document.getElementById("box-cuestionario1").classList.toggle("oculto");
 
-                    document.getElementById("enviarQuiz").addEventListener("click", function () {
-                        let correctas = 0;
-                        document.getElementById("cuestionario1").classList.toggle("oculto");
-                        for (let i = 1; i <= 4; i++) {
-                            const opciones = document.getElementsByName("op-" + i);
-                            for (let opcion of opciones) {
-                                if (opcion.checked) {
-                                    if (opcion.value === "1") {
-                                        correctas++;
+                const btnPresentar1 = document.getElementById("presentarQuiz1");
+                if (!btnPresentar1.dataset.listener) {
+                    btnPresentar1.dataset.listener = "true";
+
+                    btnPresentar1.addEventListener("click", () => {
+                        document.getElementById("leccion1").classList.toggle("oculto");
+                        document.getElementById("box-cuestionario1").classList.toggle("oculto");
+
+                        const btnEnviar1 = document.getElementById("enviarQuiz1");
+                        if (!btnEnviar1.dataset.listener) {
+                            btnEnviar1.dataset.listener = "true";
+
+                            btnEnviar1.addEventListener("click", function () {
+                                let correctas = 0;
+                                document.getElementById("box-cuestionario1").classList.toggle("oculto");
+                                for (let i = 1; i <= 4; i++) {
+                                    const opciones = document.getElementsByName("op1-" + i);
+                                    for (let opcion of opciones) {
+                                        if (opcion.checked) {
+                                            if (opcion.value === "1") {
+                                                correctas++;
+                                            }
+                                            break;
+                                        }
                                     }
-                                    break;
                                 }
-                            }
-                        }
 
-                        if (correctas >= 3) {
-                            mostrarFelicitacion(correctas, "leccion1","box-cuestionario1");
-                        } else {
-                            mostrarFallo(correctas,"cuestionario1");
+                                if (correctas >= 3) {
+                                    mostrarFelicitacion(correctas, "leccion1", "box-cuestionario1");
+                                } else {
+                                    mostrarFallo(correctas, "cuestionario1");
+                                }
+                            });
                         }
                     });
-                });
+                }
                 break;
 
             case "hoja-2":
                 document.getElementById("lecciones").classList.toggle("oculto");
                 document.getElementById("leccion2").classList.toggle("oculto");
-                document.getElementById("presentarQuiz2").addEventListener("click", () => {
-                    document.getElementById("leccion2").classList.toggle("oculto");
-                    document.getElementById("box-cuestionario2").classList.toggle("oculto");
 
-                    document.getElementById("enviarQuiz2").addEventListener("click", function () {
-                        let correctas = 0;
-                        document.getElementById("cuestionario1").classList.toggle("oculto");
-                        for (let i = 1; i <= 4; i++) {
-                            const opciones = document.getElementsByName("op-" + i);
-                            for (let opcion of opciones) {
-                                if (opcion.checked) {
-                                    if (opcion.value === "1") {
-                                        correctas++;
+                const btnPresentar2 = document.getElementById("presentarQuiz2");
+                if (!btnPresentar2.dataset.listener) {
+                    btnPresentar2.dataset.listener = "true";
+
+                    btnPresentar2.addEventListener("click", () => {
+                        document.getElementById("leccion2").classList.toggle("oculto");
+                        document.getElementById("box-cuestionario2").classList.toggle("oculto");
+
+                        const btnEnviar2 = document.getElementById("enviarQuiz2");
+                        if (!btnEnviar2.dataset.listener) {
+                            btnEnviar2.dataset.listener = "true";
+
+                            btnEnviar2.addEventListener("click", function () {
+                                let correctas = 0;
+                                document.getElementById("box-cuestionario2").classList.toggle("oculto");
+                                for (let i = 1; i <= 4; i++) {
+                                    const opciones = document.getElementsByName("op2-" + i);
+                                    for (let opcion of opciones) {
+                                        if (opcion.checked) {
+                                            if (opcion.value === "1") {
+                                                correctas++;
+                                            }
+                                            break;
+                                        }
                                     }
-                                    break;
                                 }
-                            }
-                        }
 
-                        if (correctas >= 3) {
-                            mostrarFelicitacion(correctas, "leccion2","box-cuestionario2");
-                        } else {
-                            mostrarFallo(correctas,"cuestionario1");
+                                if (correctas >= 3) {
+                                    mostrarFelicitacion(correctas, "leccion2", "box-cuestionario2");
+                                } else {
+                                    mostrarFallo(correctas, "box-cuestionario2");
+                                }
+                            });
                         }
                     });
-                });
+                }
                 break;
-                case "hoja-3":
-                    document.getElementById("lecciones").classList.toggle("oculto");
-                    document.getElementById("leccion3").classList.toggle("oculto");
-                    document.getElementById("presentarQuiz3").addEventListener("click", () => {
+
+            case "hoja-3":
+                document.getElementById("lecciones").classList.toggle("oculto");
+                document.getElementById("leccion3").classList.toggle("oculto");
+
+                const btnPresentar3 = document.getElementById("presentarQuiz3");
+                if (!btnPresentar3.dataset.listener) {
+                    btnPresentar3.dataset.listener = "true";
+
+                    btnPresentar3.addEventListener("click", () => {
                         document.getElementById("leccion3").classList.toggle("oculto");
                         document.getElementById("box-cuestionario3").classList.toggle("oculto");
-    
-                        document.getElementById("enviarQuiz3").addEventListener("click", function () {
-                            let correctas = 0;
-                            document.getElementById("cuestionario1").classList.toggle("oculto");
-                            for (let i = 1; i <= 4; i++) {
-                                const opciones = document.getElementsByName("op-" + i);
-                                for (let opcion of opciones) {
-                                    if (opcion.checked) {
-                                        if (opcion.value === "1") {
-                                            correctas++;
+
+                        const btnEnviar3 = document.getElementById("enviarQuiz3");
+                        if (!btnEnviar3.dataset.listener) {
+                            btnEnviar3.dataset.listener = "true";
+
+                            btnEnviar3.addEventListener("click", function () {
+                                let correctas = 0;
+                                document.getElementById("box-cuestionario3").classList.toggle("oculto");
+                                for (let i = 1; i <= 4; i++) {
+                                    const opciones = document.getElementsByName("op3-" + i);
+                                    for (let opcion of opciones) {
+                                        if (opcion.checked) {
+                                            if (opcion.value === "1") {
+                                                correctas++;
+                                            }
+                                            break;
                                         }
-                                        break;
                                     }
                                 }
-                            }
-    
-                            if (correctas >= 3) {
-                                mostrarFelicitacion(correctas, "leccion3", "box-cuestionario3");
-                            } else {
-                                mostrarFallo(correctas, "cuestionario3");
-                            }
-                        });
-                    });
-                    break;
-    
-                case "hoja-4":
 
-                    document.getElementById("lecciones").classList.toggle("oculto");
-                    document.getElementById("leccion4").classList.toggle("oculto");
-                    document.getElementById("presentarQuiz4").addEventListener("click", () => {
+                                if (correctas >= 3) {
+                                    mostrarFelicitacion(correctas, "leccion3", "box-cuestionario3");
+                                } else {
+                                    mostrarFallo(correctas, "box-cuestionario3");
+                                }
+                            });
+                        }
+                    });
+                }
+                break;
+
+            case "hoja-4":
+                document.getElementById("lecciones").classList.toggle("oculto");
+                document.getElementById("leccion4").classList.toggle("oculto");
+
+                const btnPresentar4 = document.getElementById("presentarQuiz4");
+                if (!btnPresentar4.dataset.listener) {
+                    btnPresentar4.dataset.listener = "true";
+
+                    btnPresentar4.addEventListener("click", () => {
                         document.getElementById("leccion4").classList.toggle("oculto");
                         document.getElementById("box-cuestionario4").classList.toggle("oculto");
-    
-                        document.getElementById("enviarQuiz4").addEventListener("click", function () {
-                            let correctas = 0;
-                            document.getElementById("cuestionario1").classList.toggle("oculto");
-                            for (let i = 1; i <= 4; i++) {
-                                const opciones = document.getElementsByName("op-" + i);
-                                for (let opcion of opciones) {
-                                    if (opcion.checked) {
-                                        if (opcion.value === "1") {
-                                            correctas++;
+
+                        const btnEnviar4 = document.getElementById("enviarQuiz4");
+                        if (!btnEnviar4.dataset.listener) {
+                            btnEnviar4.dataset.listener = "true";
+
+                            btnEnviar4.addEventListener("click", function () {
+                                let correctas = 0;
+                                document.getElementById("box-cuestionario4").classList.toggle("oculto");
+                                for (let i = 1; i <= 4; i++) {
+                                    const opciones = document.getElementsByName("op4-" + i);
+                                    for (let opcion of opciones) {
+                                        if (opcion.checked) {
+                                            if (opcion.value === "1") {
+                                                correctas++;
+                                            }
+                                            break;
                                         }
-                                        break;
                                     }
                                 }
-                            }
-    
-                            if (correctas >= 3) {
-                                mostrarFelicitacion(correctas, "leccion4","box-cuestionario4");
-                            } else {
-                                mostrarFallo(correctas, "cuestionario4");
-                            }
-                        });
+
+                                if (correctas >= 3) {
+                                    mostrarFelicitacion(correctas, "leccion4", "box-cuestionario4");
+                                } else {
+                                    mostrarFallo(correctas, "box-cuestionario4");
+                                }
+                            });
+                        }
                     });
-                    break;
-    
-                case "hoja-5":
-                    document.getElementById("lecciones").classList.toggle("oculto");
-                    document.getElementById("leccion5").classList.toggle("oculto");
-                    document.getElementById("presentarQuiz5").addEventListener("click", () => {
+                }
+                break;
+
+            case "hoja-5":
+                document.getElementById("lecciones").classList.toggle("oculto");
+                document.getElementById("leccion5").classList.toggle("oculto");
+
+                const btnPresentar5 = document.getElementById("presentarQuiz5");
+                if (!btnPresentar5.dataset.listener) {
+                    btnPresentar5.dataset.listener = "true";
+
+                    btnPresentar5.addEventListener("click", () => {
                         document.getElementById("leccion5").classList.toggle("oculto");
                         document.getElementById("box-cuestionario5").classList.toggle("oculto");
-    
-                        document.getElementById("enviarQuiz5").addEventListener("click", function () {
-                            let correctas = 0;
-                            document.getElementById("box-cuestionario5").classList.toggle("oculto");
-                            for (let i = 1; i <= 4; i++) {
-                                const opciones = document.getElementsByName("op-" + i);
-                                for (let opcion of opciones) {
-                                    if (opcion.checked) {
-                                        if (opcion.value === "1") {
-                                            correctas++;
+
+                        const btnEnviar5 = document.getElementById("enviarQuiz5");
+                        if (!btnEnviar5.dataset.listener) {
+                            btnEnviar5.dataset.listener = "true";
+
+                            btnEnviar5.addEventListener("click", function () {
+                                let correctas = 0;
+                                document.getElementById("box-cuestionario5").classList.toggle("oculto");
+                                for (let i = 1; i <= 4; i++) {
+                                    const opciones = document.getElementsByName("op5-" + i);
+                                    for (let opcion of opciones) {
+                                        if (opcion.checked) {
+                                            if (opcion.value === "1") {
+                                                correctas++;
+                                            }
+                                            break;
                                         }
-                                        break;
                                     }
                                 }
-                            }
-    
-                            if (correctas >= 3) {
-                                mostrarFelicitacion(correctas, "leccion5", "box-cuestionario5");
-                            } else {
-                                mostrarFallo(correctas, "cuestionario1");
-                            }
-                        });
+
+                                if (correctas >= 3) {
+                                    mostrarFelicitacion(correctas, "leccion5", "box-cuestionario5");
+                                } else {
+                                    mostrarFallo(correctas, "box-cuestionario5");
+                                }
+                            });
+                        }
                     });
-                    break;
-    
+                }
+                break;
         }
+
+
     }
-});
+}
+);
 
 /* Función para mostrar el quiz */
 function presentarQuiz() {
@@ -204,7 +272,7 @@ for (let i = 0; i < botonQuiz.length; i++) {
 }
 
 /* Mostrar mensaje de aprobación */
-function mostrarFelicitacion(puntaje, leccionKey,leccionnum) {
+function mostrarFelicitacion(puntaje, leccionKey, leccionnum) {
     localStorage.setItem(leccionKey, "true");
 
     let felicidadesDiv = document.createElement("div");
