@@ -1,101 +1,140 @@
-# DataThink-Academy
-✅ 1. Micro-lecciones estructuradas (aprendizaje progresivo)
-🔹 Cómo implementarlo:
-Divide el contenido en niveles o unidades:
-Ejemplo:
+# 🐸 DataThink Academy: Tu Camino Interactivo al Mundo de las Bases de Datos
 
-Unidad 1: 
+<img width="2560" height="1440" alt="DataThink_Academy_Banner_2560x1440" src="https://github.com/user-attachments/assets/1efcc081-1b16-49c1-9b53-c9930463b309" />
 
-Unidad 2: 
 
-Unidad 3: 
+Este aplicativo está diseñado para desmitificar el mundo de las bases de datos, haciéndolo accesible y divertido para principiantes. Si alguna vez te has preguntado qué son los datos, cómo se organizan o cómo se diseñan sistemas para almacenar información, ¡estás en el lugar correcto!
+---
+## 🚀 Características Principales
 
-Unidad 4: 
+* **Niveles Progresivos:** Aprende a tu propio ritmo, avanzando desde los conceptos más básicos hasta temas más avanzados del diseño de bases de datos.
+* **Explicaciones Claras y Concisas:** Contenido teórico diseñado para ser fácil de entender.
+* **Ejemplos Visuales Interactivos:** Mira cómo funcionan las cosas en la práctica.
+* **Actividades y Quizzes Prácticos:** Pon a prueba tus conocimientos y refuerza lo aprendido con desafíos interactivos.
+* **Interfaz Intuitiva:** Un diseño limpio y atractivo para una experiencia de usuario agradable.
+* **Desbloqueo de Lecciones:** Las lecciones se desbloquean progresivamente a medida que apruebas los quizzes, fomentando el aprendizaje estructurado.
+---
+## 📚 Contenido del Curso
 
-Unidad 5:
+Actualmente, el aplicativo cubre los siguientes niveles y temas:
 
-Unidad 6: 
+* **Nivel 1: Introducción a las Bases de Datos y los Datos**
+    * ¿Qué son las bases de datos?
+    * ¿Qué son los datos (y la diferencia con la información)?
+* **Nivel 2: Entendiendo las Bases de Datos**
+    * Funciones y beneficios de las bases de datos.
+    * Componentes clave: tablas, registros y campos.
+* **Nivel 3: Representaciones Conceptuales de una Base de Datos**
+    * Introducción al diseño conceptual.
+    * El Modelo Entidad-Relación (MER): Entidades, Atributos y Relaciones.
+* **Nivel 4: Cardinalidad en el Modelo Entidad-Relación**
+    * Tipos de cardinalidad: Uno a Uno (1:1), Uno a Muchos (1:M), Muchos a Muchos (M:M).
+* **Nivel 5: Claves Primarias y Foráneas (Introducción)**
+    * Identificación única con Claves Primarias (PK).
+    * Establecimiento de relaciones con Claves Foráneas (FK).
 
-Cada lección será corta (5-10 min), enfocada en un solo concepto y con ejercicios prácticos.
+## 🛠️ Tecnologías Utilizadas
 
-🎮 2. Gamificación
-🔹 Cómo implementarlo:
-Puntos (XP): Ganas puntos por cada lección completada.
+<ul>
+    <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" width="15"/>
+        </a>
+        HTML5.
+    </li>
+    <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" width="15"/>
+        </a>
+        CSS3.
+    </li>
+    <li> 
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="15"/>
+        </a>
+        JavaScript (ES6+).
+    </li>
+</ul>
 
-Racha diaria: Motiva al usuario a aprender todos los días.
+## 📷 Documentación - Maquetación del proyecto
 
-Medallas o logros: Al completar unidades, resolver sin errores, hacer 7 días seguidos, etc.
+### ✅ Vista Principal/Página de incio:
 
-🧠 3. Aprendizaje activo e interactivo
+Esta vista de inicio orece al usuario una bienvenida visual atractiva y animada. En la parte inferior derecha el usuario podrá encontrar una flecha que lo llevará a la vista de las lecciones.
 
-Incluiremos preguntas de opción múltiple para temas teóricos (por ejemplo: “¿Qué es una clave primaria?”).
+<img width="739" height="532" alt="image" src="https://github.com/user-attachments/assets/7d61a8a5-d2bb-4a5c-8951-54fd097ca30c" />
 
-Agrega drag & drop para ejercicios de modelado o normalización.
+### ✅ Vista lecciones
 
-Simula un entorno de base de datos real donde el usuario vea los datos antes y después de sus consultas.
+En esta vista el usuario tendrá disponible todos los niveles que podrá cursar en nuestro aplicativo y encontrará desbloqueados solamente los que logró cursar de manera satisfactoria.
 
-📈 4. Práctica espaciada y repaso inteligente
-🔹 Cómo implementarlo:
-Marca lecciones como "débilmente aprendidas" si el usuario comete errores o hace mucho que no las repasa.
+<img width="828" height="578" alt="image" src="https://github.com/user-attachments/assets/9654ec4e-b66f-4818-baaa-d2d582870ba0" />
 
-Usa un algoritmo de repaso (tipo Anki) para sugerir qué conceptos repasar cada día.
+### ✅ Vista contenido educativo
 
-Usa colores (verde/amarillo/rojo) para mostrar qué tan fresco tiene el usuario un tema.
+En esta vista e usuario podrá encontrar la información correspondiente a el contenido educativo de la plataforma.
 
-⚠️ 5. Feedback inmediato
-🔹 Cómo implementarlo:
-Cuando el usuario escribe mal una consulta SQL, dale:
+<img width="738" height="526" alt="image" src="https://github.com/user-attachments/assets/498a00c9-a459-46f8-85a5-25fa666320a4" />
 
-El error,
+### ✅ Vista quiz
 
-La solución correcta,
+Asi se ve la vista del quiz, en el cual el usuario pondrá a prueba sus conocimientos y en cual se determinará si puede continuar al siguiente nivel o si deberá repetir la prueba.
 
-Una breve explicación del concepto.
+<img width="745" height="533" alt="image" src="https://github.com/user-attachments/assets/9be7a6ab-cfd8-43c4-aac2-9239e98bf92a" />
 
-Permite ver ejemplos resueltos y acceder a una ayuda opcional antes de rendirse.
+--- 
+Si deseas ver más acerca de la maquetación de nuestro proyecto puedes encontrar el diseño que realizamos en Figma en el siguiente enlace ⤵️
 
-🧪 6. Ejercicios realistas y contextuales
-🔹 Cómo implementarlo:
-Usa escenarios de la vida real:
+https://www.figma.com/design/iUwarm09dfsnTaOsOtjUaL/Untitled?node-id=3-94&t=pccYuGQJQBZ6jjrz-0
 
-“Consulta cuántos productos quedan en stock.”
+## 🦾 Planificación de Proyecto
 
-“Busca los clientes que compraron más de $1000 este mes.”
+En el siguente enlace encontrarás un archivo con las historias de usuario, los requerimiento y la planeación de este proyecto.
 
-Puedes usar una base de datos ficticia pero coherente (tienda online, biblioteca, red social, etc.) para que las prácticas tengan contexto.
+https://www.notion.so/Proyecto-DataThink-Academy-230920a3c2a280078b4bd8cd2d83d8f3
 
-🏁 7. Desafíos especiales y exámenes de nivel
-🔹 Cómo implementarlo:
-Desafío de fin de unidad: Más difícil, combina lo aprendido.
+adjunto también encontrarás en este archivo un enlace que te llevará a la planeación del Sprint de nuestro proyecto.
 
-Modo “Examen”: Para subir de nivel sin hacer todas las lecciones.
+## 🎥 Evidencias visuales.
 
-Eventos semanales: Ejemplo: "Desafío JOINs de la semana".
+Aqui un video explicativo sobre la ejecución del proyecto y mostrando su funcionamiento.
 
-👥 8. Aspecto social (opcional, pero poderoso)
-🔹 Cómo implementarlo:
-Comparte tus logros en redes sociales.
+https://www.youtube.com/watch?v=aRcJeWT9qLU
 
-Crea grupos o ligas (como en Duolingo) para competir con amigos.
 
-Foros o chats para discutir problemas o pedir ayuda.
+## 🤝 Contribuciones
 
-🛠️ 9. Herramientas integradas
-🔹 Incluye dentro de la app:
-Editor SQL interactivo (como SQLZoo o DB-Fiddle).
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, siéntete libre de:
 
-Visualizador de tablas para ver los resultados de las consultas.
+1.  Hacer un fork del repositorio.
+2.  Crear una nueva rama (`git checkout -b feature/nueva-caracteristica`).
+3.  Realizar tus cambios.
+4.  Hacer un commit de tus cambios (`git commit -am 'feat: Añade nueva característica X'`).
+5.  Push a la rama (`git push origin feature/nueva-caracteristica`).
+6.  Abrir un Pull Request.
 
-Constructor visual para modelado ER (arrastrar entidades y relaciones).
+## 🙋‍♀️ Autores
 
-Modo sin conexión: Para repasar teoría o hacer ejercicios sin conexión.
+Desarrollado por 
 
-📱 10. Diseño UI/UX tipo Duolingo
-🔹 Cómo debe sentirse:
-Colorido, simple, amigable.
+[Camila Florez](https://github.com/CamilaFlorez12) 
 
-Iconografía clara (puntos, rachas, progreso).
+[Edgar Leal](https://github.com/Andre07g) 
 
-Animaciones y sonidos de recompensa.
+[Karol Reyes](https://github.com/KarolainReyes) 
 
-Retroalimentación positiva constante.
+[Michel Rodriguez](https://github.com/MichelRodriguez05) 
+
+[Valentina Delgado](https://github.com/ValentinaDelgadoRincon) 
+
+como parte de un proyecto personal de práctica en desarrollo web.
+
+---
+
+## 📌 Nota
+
+Este proyecto es de carácter educativo.
+
+---
+
+¡Gracias por visitar DataThink Academy! 🐸
